@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Contrato Empresarial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- Header com Logo -->
+            <!-- Header com Logo -->
+            <!-- Header com Logo -->
+            <div class="header">
+                <div class="logo">
+                    <img src="sesi_logo.png" alt="Logo SESI" class="logo-image">
+                    <h1>Solicitação de Contrato Empresarial</h1>
+                </div>
+                <p class="subtitle">Dados do Contratante</p>
+
+                <div class="divider"></div>
+            </div>
+            
+            <form id="contractForm" enctype="multipart/form-data">
+                <!-- Seção: Dados da Empresa -->
+                <div class="section">
+                    <h2><i class="fas fa-building"></i> Dados da Empresa</h2>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="razaoSocial">Razão Social <span class="required">*</span></label>
+                            <input type="text" id="razaoSocial" name="razaoSocial" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nomeFantasia">Nome Fantasia</label>
+                            <input type="text" id="nomeFantasia" name="nomeFantasia">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cnpj">CNPJ <span class="required">*</span></label>
+                            <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00" maxlength="18" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inscricaoEstadual">Inscrição Estadual</label>
+                            <input type="text" id="inscricaoEstadual" name="inscricaoEstadual">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="ramo">Ramo de Atividade <span class="required">*</span></label>
+                            <select id="ramo" name="ramo" required>
+                                <option value="">Selecione o ramo</option>
+                                <option value="tecnologia">Tecnologia</option>
+                                <option value="comercio">Comércio</option>
+                                <option value="servicos">Serviços</option>
+                                <option value="industria">Indústria</option>
+                                <option value="consultoria">Consultoria</option>
+                                <option value="educacao">Educação</option>
+                                <option value="saude">Saúde</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="porte">Porte da Empresa <span class="required">*</span></label>
+                            <select id="porte" name="porte" required>
+                                <option value="">Selecione o porte</option>
+                                <option value="mei">MEI</option>
+                                <option value="micro">Microempresa</option>
+                                <option value="pequena">Pequena</option>
+                                <option value="media">Média</option>
+                                <option value="grande">Grande</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Seção: Endereço -->
+                <div class="section">
+                    <h2><i class="fas fa-map-marker-alt"></i> Endereço</h2>
+                    
+                    <div class="form-row">
+                        <div class="form-group medium">
+                            <label for="cep">CEP <span class="required">*</span></label>
+                            <input type="text" id="cep" name="cep" placeholder="00000-000" maxlength="9" required>
+                        </div>
+                        <div class="form-group large">
+                            <label for="endereco">Endereço <span class="required">*</span></label>
+                            <input type="text" id="endereco" name="endereco" required>
+                        </div>
+                        <div class="form-group small">
+                            <label for="numero">Número <span class="required">*</span></label>
+                            <input type="text" id="numero" name="numero" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" id="complemento" name="complemento">
+                        </div>
+                        <div class="form-group">
+                            <label for="bairro">Bairro <span class="required">*</span></label>
+                            <input type="text" id="bairro" name="bairro" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cidade">Cidade <span class="required">*</span></label>
+                            <input type="text" id="cidade" name="cidade" required>
+                        </div>
+                        <div class="form-group small">
+                            <label for="estado">Estado <span class="required">*</span></label>
+                            <select id="estado" name="estado" required>
+                                <option value="">UF</option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Seção: Representante Legal -->
+                <div class="section">
+                    <h2><i class="fas fa-user-tie"></i> Representante Legal</h2>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nomeRepresentante">Nome Completo <span class="required">*</span></label>
+                            <input type="text" id="nomeRepresentante" name="nomeRepresentante" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cargo">Cargo <span class="required">*</span></label>
+                            <input type="text" id="cargo" name="cargo" placeholder="Ex: Diretor, Sócio, CEO" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cpf">CPF <span class="required">*</span></label>
+                            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rg">RG <span class="required">*</span></label>
+                            <input type="text" id="rg" name="rg" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone <span class="required">*</span></label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" maxlength="15" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Seção: Informações do Contrato -->
+                <div class="section">
+                    <h2><i class="fas fa-file-contract"></i> Informações do Contrato</h2>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tipoContrato">Tipo de Contrato <span class="required">*</span></label>
+                            <select id="tipoContrato" name="tipoContrato" required>
+                                <option value="">Selecione o tipo</option>
+                                <option value="prestacao-servicos">Saúde Assistencial</option>
+                                <option value="fornecimento">Saúde Ocupacional</option>
+                                <option value="parceria">PGR</option>
+                                <option value="licenciamento">PCMSO</option>
+                                <!-- <option value="consultoria">Consultoria</option>
+                                <option value="outros">Outros</option> -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="dataInicio">Data de Início Desejada</label>
+                            <input type="date" id="dataInicio" name="dataInicio">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="descricaoServicos">Descrição dos Serviços/Produtos <span class="required">*</span></label>
+                        <textarea id="descricaoServicos" name="descricaoServicos" rows="4" placeholder="Descreva detalhadamente os serviços ou produtos que serão objeto do contrato..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="observacoes">Observações Adicionais</label>
+                        <textarea id="observacoes" name="observacoes" rows="3" placeholder="Informações adicionais relevantes para o contrato..."></textarea>
+                    </div>
+                </div>
+                
+                <!-- Seção: Documentos -->
+                <div class="section">
+                    <h2><i class="fas fa-paperclip"></i> Documentos Obrigatórios</h2>
+                    
+                    <div class="documents-info">
+                        <p><strong>Documentos necessários para confecção do contrato:</strong></p>
+                        <ul>
+                            <li>Contrato Social ou Estatuto</li>
+                            <li>Cartão CNPJ atualizado</li>
+                            <li>Comprovante de endereço da empresa</li>
+                            <li>RG e CPF do representante legal</li>
+                            <li>Procuração (se aplicável)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="documentos">Anexar Documentos <span class="required">*</span></label>
+                        <div class="file-upload">
+                            <input type="file" id="documentos" name="documentos" multiple accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" required>
+                            <div class="file-upload-content">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <span>Clique para selecionar arquivos ou arraste aqui</span>
+                                <small>Formatos aceitos: PDF, JPG, PNG, DOC, DOCX (máx. 10MB cada)</small>
+                            </div>
+                        </div>
+                        <div id="fileList" class="file-list"></div>
+                    </div>
+                </div>
+                
+                <!-- Termos e Envio -->
+                <div class="section">
+                    <div class="terms">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="termos" name="termos" required>
+                            <span class="checkmark"></span>
+                            Declaro que as informações fornecidas são verdadeiras e autorizo o uso dos dados para confecção do contrato <span class="required">*</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        <span class="btn-text">Enviar Solicitação</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Enviando...
+                        </span>
+                    </button>
+                </div>
+            </form>
+            
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
